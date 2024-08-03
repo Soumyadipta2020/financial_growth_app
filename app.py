@@ -1,7 +1,7 @@
 # Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 # venv\Scripts\Activate.ps1 - Virtual env activate in terminal
 # Library
-import os.path
+# import os.path
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -11,8 +11,8 @@ import seaborn as sns
 st.set_page_config(layout="wide")
 
 # Load and preprocess the dataset
-HERE = os.path.dirname(os.path.abspath(__file__))
-DATA = os.path.join(HERE, "data.csv")
+# HERE = os.path.dirname(os.path.abspath(__file__))
+# DATA = os.path.join(HERE, "data.csv")
 df = pd.read_excel("./MSVAR_Data.xlsx", header = 0)
 df = df.drop(df.columns[[0]], axis=1) 
 
