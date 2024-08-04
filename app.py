@@ -64,7 +64,7 @@ with col2:
     type_options = df_graph["TYPE"].unique()
     type_filter = st.selectbox("Select a type of data:", type_options)
 
-    df_graph_filter = df_graph[df_graph["TYPE"] == type_filter]
+    df_graph_filter = df_graph[df_graph["TYPE"] == type_filter].fillna(0)
 
     # Price Type filter
     price_type = df_graph_filter["PRICE TYPE"].unique()
