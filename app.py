@@ -1,5 +1,6 @@
 # Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 # venv\Scripts\Activate.ps1 - Virtual env activate in terminal
+
 # Library
 import streamlit as st
 import pandas as pd
