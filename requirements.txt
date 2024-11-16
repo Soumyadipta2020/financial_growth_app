@@ -3,6 +3,6 @@ pandas
 matplotlib
 seaborn
 openpyxl
-PIL
+PIL==10.4.0
 base64
 io
